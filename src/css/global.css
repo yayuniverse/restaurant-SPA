@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    padding: 64px 80px;
+    gap: 40px;
+    background-color: #F1E8B8;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    /* background-color: #D2D1CB; */
+    border: 1px solid #564138;
+    /* padding: 12px 0; */
+}
+
+button {
+    font-size: 14px;
+    font-weight: 500;
+    color: #564138;
+    padding: 16px 0;
+    background-color: transparent;
+    border: none;
+}
+
+button#hoursLocation {
+    border-bottom: 1px solid #564138;
+}
+
+button.active {
+    background-color: #564138;
+    color: #f8f3f1;
+}
