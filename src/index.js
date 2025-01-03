@@ -3,14 +3,15 @@ import "./css/global.css";
 import "./css/menu.css";
 import "./css/hours-location.css";
 import "./css/about.css";
-import { renderMenu } from "./menu";
-import { renderAbout } from "./about";
-import { renderHours } from "./hours-location";
+import { menuContent } from "./menu";
+import { hoursContent } from "./hours-location";
+import { aboutContent } from "./about";
 
 const contentPage = document.querySelector("#content");
-const menuContent = renderMenu();
-const hoursContent = renderHours();
-const aboutContent = renderAbout();
+const navElement = document.querySelector("nav");
+const menuBtn = document.querySelector("#menu");
+const hoursBtn = document.querySelector("#hours");
+const aboutBtn = document.querySelector("#about");
 
 function wipeContentPage() {
   contentPage.replaceChildren();
@@ -26,11 +27,6 @@ function setTabAsActive(tab) {
 function renderContent(tabContent) {
   contentPage.append(tabContent);
 }
-
-const navElement = document.querySelector("nav");
-const menuBtn = document.querySelector("#menu");
-const hoursBtn = document.querySelector("#hours");
-const aboutBtn = document.querySelector("#about");
 
 renderContent(menuContent);
 
