@@ -1,7 +1,7 @@
 function renderMenu() {
     const headerText = document.createElement('h1')
-    headerText.textContent = 'MENU'
-    return headerText
+    headerText.textContent = 'Menu'
+    return [headerText]
 }
 
 export const menuContent = renderMenu()

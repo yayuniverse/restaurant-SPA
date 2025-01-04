@@ -25,7 +25,7 @@ function setTabAsActive(tab) {
 }
 
 function renderContent(tabContent) {
-  contentPage.append(tabContent);
+  contentPage.append(...tabContent);
 }
 
 //Set initial page state
