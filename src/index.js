@@ -28,7 +28,10 @@ function renderContent(tabContent) {
   contentPage.append(tabContent);
 }
 
+//Set initial page state
+setTabAsActive(menuBtn)
 renderContent(menuContent);
+
 
 navElement.addEventListener("click", (e) => {
   if (e.target.id === "menu") {
