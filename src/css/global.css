@@ -1,37 +1,66 @@
 body {
-    display: flex;
-    padding: 64px 80px;
-    gap: 40px;
-    background-color: #F1E8B8;
+  display: flex;
+  padding: 64px 80px;
+  gap: 48px;
+  background-color: #f1e8b8;
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    border: 1px solid #564138;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
 }
 
 button {
-    font-size: 14px;
-    font-weight: 500;
-    color: #564138;
-    padding: 16px 0;
-    background-color: transparent;
-    border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #564138;
+  padding: 16px 0;
+  background-color: transparent;
+  border: 1px solid #c1b1aa;
 }
 
-button#hoursLocation {
-    border-bottom: 1px solid #564138;
+#menu {
+  border-width: 1px 1px 0.5px;
+}
+
+#hours {
+  border-width: 0.5px 1px;
+}
+
+#about {
+  border-width: 0.5px 1px 1px;
 }
 
 button.active {
-    background-color: #564138;
-    color: #f8f3f1;
+  background-color: #564138;
+  border: 1px solid #564138;
+  color: #f8f3f1;
 }
 
 div#content {
-    border: 1px solid #c1b1aa;
-    width: 100%;
-    height: 100vh;
+  box-sizing: content-box;
+  /* border: 1px solid #c1b1aa; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 16px;
+}
+
+/* menu page */
+.menu-header {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: #577137;
+}
+
+.table {
+  margin-top: 40px;
+  margin-bottom: 96px;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #c1b1aa;
 }

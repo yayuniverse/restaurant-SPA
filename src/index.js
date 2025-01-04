@@ -29,9 +29,8 @@ function renderContent(tabContent) {
 }
 
 //Set initial page state
-setTabAsActive(menuBtn)
+setTabAsActive(menuBtn);
 renderContent(menuContent);
-
 
 navElement.addEventListener("click", (e) => {
   if (e.target.id === "menu") {
@@ -48,3 +47,14 @@ navElement.addEventListener("click", (e) => {
     renderContent(aboutContent);
   }
 });
+
+//utility functions
+function addClass(element, className) {
+  element.classList.add(className);
+}
+
+function createElement(elementType) {
+  return document.createElement(elementType);
+}
+
+export { addClass, createElement };
