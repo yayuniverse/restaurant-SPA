@@ -9,6 +9,13 @@ function renderMenu() {
   const morningTable = createElement("div");
   addClass(morningTable, "table");
 
+  //table items
+  const lineSymbol = createElement("span");
+  addClass(lineSymbol, "line-symbol", "row1");
+  lineSymbol.textContent = "❇︎"
+
+  morningTable.append(lineSymbol)
+
   //noon menu
   const noonHeader = createElement("h1");
   addClass(noonHeader, "menu-header");
@@ -22,10 +29,17 @@ function renderMenu() {
   addClass(drinksHeader, "menu-header");
   drinksHeader.textContent = "Drinks";
 
-  const drinksTable = createElement('div')
-  addClass(drinksTable, "table")
+  const drinksTable = createElement("div");
+  addClass(drinksTable, "table");
 
-  return [morningHeader, morningTable, noonHeader, noonTable, drinksHeader, drinksTable];
+  return [
+    morningHeader,
+    morningTable,
+    noonHeader,
+    noonTable,
+    drinksHeader,
+    drinksTable,
+  ];
 }
 
 export const menuContent = renderMenu();

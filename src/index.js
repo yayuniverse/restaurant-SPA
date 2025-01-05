@@ -49,8 +49,8 @@ navElement.addEventListener("click", (e) => {
 });
 
 //utility functions
-function addClass(element, className) {
-  element.classList.add(className);
+function addClass(element, ...className) {
+  element.classList.add(...className);
 }
 
 function createElement(elementType) {
