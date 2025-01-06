@@ -15,13 +15,13 @@
   margin-top: 40px;
   margin-bottom: 96px;
   width: 100%;
-  height: 200px;
 }
 
 .row {
   display: flex;
   gap: 1px;
   width: 100%;
+  min-height: 64px;
 }
 
 .row-item {
@@ -41,12 +41,16 @@
 }
 
 .meal-name {
-  flex-basis: 30%;
+  flex-basis: 252px;
+  flex-shrink: 0;
+  flex-grow: 1;
   font-weight: 700;
 }
 
 .meal-ingredients {
   flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 458px;
 }
 
 .meal-price {
@@ -56,4 +60,5 @@
   color: #577137;
   font-weight: 700;
   flex-basis: 65px;
+  flex-shrink: 0;
 }

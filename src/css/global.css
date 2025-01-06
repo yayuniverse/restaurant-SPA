@@ -1,14 +1,14 @@
 body {
   display: flex;
   padding: 64px 80px;
-  gap: 48px;
+  gap: 120px;
   background-color: #f1e8b8;
 }
 
 nav {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 160px;
 }
 
 button {
