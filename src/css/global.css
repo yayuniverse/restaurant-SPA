@@ -76,10 +76,6 @@ div#content {
   width: 100%;
 }
 
-.table :nth-child(1) {
-  grid-row: 1 / 2;
-}
-
 .row-item {
   display: flex;
   align-items: center;
@@ -106,6 +102,9 @@ div#content {
 }
 
 .meal-price {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
   color: #577137;
   font-weight: 700;
   flex-basis: 65px;

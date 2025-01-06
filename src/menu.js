@@ -9,11 +9,25 @@ function renderMenu() {
   const morningTable = createElement("div");
   addClass(morningTable, "table");
 
-  //first table row
+  //table rows
   createTableRow(
     "Press Proof French Toast",
     "House sourdough, browned butter, preserved citrus",
     "$14",
+    morningTable
+  );
+
+  createTableRow(
+    "Editors' Breakfast",
+    "Soft scrambled eggs, house bacon, chili oil, microgreens",
+    "$16",
+    morningTable
+  );
+
+  createTableRow(
+    "Deadline Bowl",
+    "Ancient grains, soft egg, avocado, pickled onions",
+    "$15",
     morningTable
   );
 
@@ -25,6 +39,27 @@ function renderMenu() {
   const noonTable = createElement("div");
   addClass(noonTable, "table");
 
+  createTableRow(
+    "Headlines Sandwich",
+    "Rotisserie chicken, bacon jam, arugula, aioli",
+    "$17",
+    noonTable
+  );
+
+  createTableRow(
+    "Opinion Section",
+    "Rotating chef's daily main",
+    "$MP",
+    noonTable
+  );
+
+  createTableRow(
+    "Letters Board",
+    "Ancient grains, soft egg, avocado, pickled onions",
+    "$24",
+    noonTable
+  );
+
   //drinks
   const drinksHeader = createElement("h1");
   addClass(drinksHeader, "menu-header");
@@ -32,6 +67,27 @@ function renderMenu() {
 
   const drinksTable = createElement("div");
   addClass(drinksTable, "table");
+
+  createTableRow(
+    "Late Edition",
+    "Cold brew, vanilla, oat milk",
+    "$5",
+    drinksTable
+  );
+
+  createTableRow(
+    "Press Room",
+    "Fresh juice daily",
+    "$7",
+    drinksTable
+  );
+
+  createTableRow(
+    "Editorial Meeting",
+    "Champagne cocktail",
+    "$12",
+    drinksTable
+  );
 
   return [
     morningHeader,
