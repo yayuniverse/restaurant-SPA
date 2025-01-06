@@ -9,12 +9,13 @@ function renderMenu() {
   const morningTable = createElement("div");
   addClass(morningTable, "table");
 
-  //table items
-  const lineSymbol = createElement("span");
-  addClass(lineSymbol, "line-symbol", "row1");
-  lineSymbol.textContent = "❇︎"
-
-  morningTable.append(lineSymbol)
+  //first table row
+  createTableRow(
+    "Press Proof French Toast",
+    "House sourdough, browned butter, preserved citrus",
+    "$14",
+    morningTable
+  );
 
   //noon menu
   const noonHeader = createElement("h1");
@@ -40,6 +41,30 @@ function renderMenu() {
     drinksHeader,
     drinksTable,
   ];
+}
+
+function createTableRow(mealName, mealIngredients, mealPrice, table) {
+  const row = createElement("div");
+  addClass(row, "row");
+
+  const lineSymbol = createElement("span");
+  addClass(lineSymbol, "line-symbol", "row-item");
+  lineSymbol.textContent = "❇︎";
+
+  const name = createElement("p");
+  addClass(name, "meal-name", "row-item");
+  name.textContent = `${mealName}`;
+
+  const ingredients = createElement("p");
+  addClass(ingredients, "meal-ingredients", "row-item");
+  ingredients.textContent = `${mealIngredients}`;
+
+  const price = createElement("p");
+  addClass(price, "meal-price", "row-item");
+  price.textContent = `${mealPrice}`;
+
+  table.append(row);
+  row.append(lineSymbol, name, ingredients, price);
 }
 
 export const menuContent = renderMenu();
