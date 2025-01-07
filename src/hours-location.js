@@ -1,4 +1,4 @@
-import { addClass, createElement } from "./index.js";
+import { addClass, createElement } from "./index";
 
 function renderHours() {
   const headerText = createElement("h1");
