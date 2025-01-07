@@ -9,6 +9,7 @@ nav {
   display: flex;
   flex-direction: column;
   width: 160px;
+  padding-top: 8px;
 }
 
 button {
@@ -45,6 +46,6 @@ div#content {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: center;
-  padding-top: 16px;
+  align-items: start;
+  /* padding-top: 16px; */
 }
