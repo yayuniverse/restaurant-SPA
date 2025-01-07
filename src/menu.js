@@ -101,10 +101,10 @@ function renderMenu() {
 
 function createTableRow(mealName, mealIngredients, mealPrice, table) {
   const row = createElement("div");
-  addClass(row, "row");
+  addClass(row, "menu-row");
 
   const lineSymbol = createElement("span");
-  addClass(lineSymbol, "line-symbol", "row-item");
+  addClass(lineSymbol, "menu-line-symbol", "row-item");
   lineSymbol.textContent = "❇︎";
 
   const name = createElement("p");
