@@ -49,7 +49,7 @@
   font-size: 16px;
   font-weight: 400;
   color: #564138;
-  margin-top: 32px;
+  margin-top: 48px;
 }
 
 .holidays-list,
@@ -63,6 +63,17 @@
 }
 
 .location-body {
+  font-weight: 500;
   margin-top: 12px;
   color: #564138;
+}
+
+.hours-divider {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 40px;
+  width: 100%;
+  margin-top: 56px;
+  /* border: 1px solid #564138; */
 }

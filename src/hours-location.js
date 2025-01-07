@@ -30,7 +30,16 @@ function renderHours() {
   createRow("Limited hours posted seasonally", holidaysList);
   createRow("Special brunch service on major holidays", holidaysList);
 
-  
+  //divider
+  const hoursDivider = createElement("div")
+  addClass(hoursDivider, "hours-divider")
+
+  for (let i = 0; i < 100; i++) {
+    const symbol = createElement("p")
+    symbol.textContent = "-"
+
+    hoursDivider.append(symbol)
+  }
 
   //location section
   const locationHeader = createElement("h1");
@@ -72,6 +81,7 @@ function renderHours() {
     hoursList,
     holidaysHeader,
     holidaysList,
+    hoursDivider,
     locationHeader,
     locationBody,
     parkingHeader,
