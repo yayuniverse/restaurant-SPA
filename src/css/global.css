@@ -1,7 +1,8 @@
 body {
-  display: flex;
-  padding: 64px 80px;
-  gap: 120px;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  padding: 64px 120px;
+  gap: 100px;
   background-color: #f1e8b8;
 }
 
