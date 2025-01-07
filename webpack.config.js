@@ -29,6 +29,10 @@ module.exports = {
           filename: "fonts/[hash][ext]", // puts fonts in dist/fonts/
         },
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
+        type: "asset/resource",
+      },
     ],
   },
 };
