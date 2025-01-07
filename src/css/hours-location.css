@@ -6,13 +6,19 @@
   color: #564138;
 }
 
-.hours-list {
-  position: relative;
+.no-list-style {
+  list-style: none;
+}
+
+.hours-list, .holidays-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin-top: 24px;
-  list-style: none;
+}
+
+.hours-list {
+  position: relative;
 }
 
 .hours-row {
@@ -30,5 +36,18 @@
 }
 
 .hours-span {
-  font-weight: 700;
+  font-weight: 600;
+}
+
+.holidays-header {
+  /* font-family: "PT Serif", serif; */
+  font-size: 16px;
+  font-weight: 400;
+  /* letter-spacing: -1px; */
+  color: #564138;
+  margin-top: 32px;
+}
+
+.holidays-list {
+  margin-top: 16px;
 }
