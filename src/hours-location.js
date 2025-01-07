@@ -15,18 +15,54 @@ function renderHours() {
   createRow("Coffee service until close", hoursList);
 
   //holidays section
-  const subHeader = createElement("h2");
-  subHeader.textContent = "Holiday Schedule";
-  addClass(subHeader, "holidays-header");
+  const holidaysHeader = createElement("h2");
+  holidaysHeader.textContent = "Holiday Schedule";
+  addClass(holidaysHeader, "holidays-header");
 
   const holidaysList = createElement("ul");
-  addClass(holidaysList, "holidays-list")
+  addClass(holidaysList, "holidays-list");
 
-  createRow("Thanksgiving, Christmas, New Year's Day", holidaysList, "Closed: ")
-  createRow("Limited hours posted seasonally", holidaysList)
-  createRow("Special brunch service on major holidays", holidaysList)
+  createRow(
+    "Thanksgiving, Christmas, New Year's Day",
+    holidaysList,
+    "Closed: "
+  );
+  createRow("Limited hours posted seasonally", holidaysList);
+  createRow("Special brunch service on major holidays", holidaysList);
 
-  return [headerText, hoursList, subHeader, holidaysList];
+  //location section
+  const locationHeader = createElement("h1");
+  addClass(locationHeader, "location-header");
+  locationHeader.textContent = "Location";
+
+  const locationBody = createElement("p");
+  addClass(locationBody, "location-body");
+  locationBody.textContent =
+    "123 Press Row, Downtown Arts District (Between Gallery Walk & Museum Street)";
+
+  //parking
+  const parkingHeader = createElement("h2");
+  addClass(parkingHeader, "parking-header");
+  parkingHeader.textContent = "Parking";
+
+  const parkingList = createElement("ul");
+  addClass(parkingList, "parking-list");
+
+  createRow("Press District Station (2 blocks)", parkingList, "Blue Line: ");
+  createRow("12, 15, 45", parkingList, "Bus Routes: ");
+  createRow("ADA accessible entrance on Press Row", parkingList);
+  createRow("Outdoor seating (weather permitting)", parkingList);
+
+  return [
+    headerText,
+    hoursList,
+    holidaysHeader,
+    holidaysList,
+    locationHeader,
+    locationBody,
+    parkingHeader,
+    parkingList,
+  ];
 }
 
 function createRow(text, uList, highlightedText = "") {

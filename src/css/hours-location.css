@@ -1,4 +1,5 @@
-.hours-header {
+.hours-header,
+.location-header {
   font-family: "PT Serif", serif;
   font-size: 24px;
   font-weight: 500;
@@ -10,7 +11,9 @@
   list-style: none;
 }
 
-.hours-list, .holidays-list {
+.hours-list,
+.holidays-list,
+.parking-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -39,15 +42,24 @@
   font-weight: 600;
 }
 
-.holidays-header {
-  /* font-family: "PT Serif", serif; */
+.holidays-header,
+.parking-header {
   font-size: 16px;
   font-weight: 400;
-  /* letter-spacing: -1px; */
   color: #564138;
   margin-top: 32px;
 }
 
-.holidays-list {
+.holidays-list,
+.parking-list {
   margin-top: 16px;
+}
+
+.location-header {
+  margin-top: 48px;
+}
+
+.location-body {
+  margin-top: 12px;
+  color: #564138;
 }
