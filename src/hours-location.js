@@ -31,15 +31,8 @@ function renderHours() {
   createRow("Special brunch service on major holidays", holidaysList);
 
   //divider
-  const hoursDivider = createElement("div")
-  addClass(hoursDivider, "hours-divider")
-
-  for (let i = 0; i < 100; i++) {
-    const symbol = createElement("p")
-    symbol.textContent = "-"
-
-    hoursDivider.append(symbol)
-  }
+  const hoursDivider = createElement("div");
+  addClass(hoursDivider, "hours-divider");
 
   //location section
   const locationHeader = createElement("h1");
