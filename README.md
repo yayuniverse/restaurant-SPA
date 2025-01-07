@@ -24,6 +24,6 @@ A single-page application (SPA) for a restaurant website built with vanilla Java
 - Run `npm run build` for production build
 
 ## Screenshots
-![Restaurant Website Screenshot](./images/menu.png)
-![Restaurant Website Screenshot](./images/hours.png)
-![Restaurant Website Screenshot](./images/about.png)
+![Restaurant Website Screenshot](./src/images/menu.png)
+![Restaurant Website Screenshot](./src/images/hours.png)
+![Restaurant Website Screenshot](./src/images/about.png)
