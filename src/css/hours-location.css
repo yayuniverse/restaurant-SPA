@@ -13,7 +13,8 @@
 
 .hours-list,
 .holidays-list,
-.parking-list {
+.parking-list,
+.contact-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -43,7 +44,8 @@
 }
 
 .holidays-header,
-.parking-header {
+.parking-header,
+.contact-header {
   font-size: 16px;
   font-weight: 400;
   color: #564138;
@@ -51,7 +53,8 @@
 }
 
 .holidays-list,
-.parking-list {
+.parking-list,
+.contact-list {
   margin-top: 16px;
 }
 

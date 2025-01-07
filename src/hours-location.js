@@ -30,6 +30,8 @@ function renderHours() {
   createRow("Limited hours posted seasonally", holidaysList);
   createRow("Special brunch service on major holidays", holidaysList);
 
+  
+
   //location section
   const locationHeader = createElement("h1");
   addClass(locationHeader, "location-header");
@@ -53,6 +55,18 @@ function renderHours() {
   createRow("ADA accessible entrance on Press Row", parkingList);
   createRow("Outdoor seating (weather permitting)", parkingList);
 
+  //contact
+  const contactHeader = createElement("h2");
+  addClass(contactHeader, "contact-header");
+  contactHeader.textContent = "Contact";
+
+  const contactList = createElement("ul");
+  addClass(contactList, "contact-list");
+
+  createRow("(555) 555-NEWS", contactList);
+  createRow("reservations@sundaypaper.com", contactList);
+  createRow("events@sundaypaper.com", contactList);
+
   return [
     headerText,
     hoursList,
@@ -62,10 +76,12 @@ function renderHours() {
     locationBody,
     parkingHeader,
     parkingList,
+    contactHeader,
+    contactList,
   ];
 }
 
-function createRow(text, uList, highlightedText = "") {
+function createRow(text, list, highlightedText = "") {
   const row = createElement("li");
   addClass(row, "hours-row", "no-list-style");
 
@@ -83,7 +99,7 @@ function createRow(text, uList, highlightedText = "") {
   //   name.textContent = `${text}`;
 
   //   row.append(lineSymbol, name);
-  uList.append(row);
+  list.append(row);
 }
 
 export const hoursContent = renderHours();
